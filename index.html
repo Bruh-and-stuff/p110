@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Image Recognition P103</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+  
+    </head>
+    <body>
+        <div id="container">
+            <center>
+                <h1 id="title">Image Recognition - Part 1</h1>
+                <br><br>
+                <h3 class="text-muted">Family members included in this are:</h3>
+                <b>
+                    <hr>
+                    Son
+                    <hr>
+                    Daughter
+                    <hr>
+                    Dad
+                    <hr>
+                    Mum
+                    <hr>
+                </b>
+                <br>
+                <br><br>
+                <label id="label_cam">Camera below</label>
+                <br>
+                <div class="imgs" id="camera"></div>
+                <br><br>
+                <div class="imgs" id="result"></div>
+                <br><br>
+                <button class="btn btn-success" id="photos" onclick="snap_Photo()">Take Photo</button>
+                <br>
+                <button class="btn btn-info" id="recognise" onclick="know_Photo()">Recognise</button>
+                <br>
+                <br>
+                <h2 class="return">Object: <span id="object"></span></h2>
+                <br>
+                <h2 class="return">Accuracy: <span id="accuracy"></span></h2>
+            </center>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
